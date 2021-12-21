@@ -1,0 +1,234 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    font-size  : 16px;
+    font-family: Poppins;
+}
+
+a {
+    text-decoration: none;
+    cursor         : pointer;
+}
+
+body {
+    background-color: #01060A
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.container {
+    // width    : 1090px;
+    max-width: 1090px;
+    margin   : 0 auto;
+}
+
+.home {
+    width              : 100%;
+    height             : 100%;
+    position           : relative;
+    color              : white;
+    margin             : 0;
+    box-sizing         : border-box;
+    background-position: top;
+    background-repeat  : no-repeat;
+    // background-size    : 100%;
+    background-size:1262px 1035px;
+    background-image   : url('./../../assets/home/bg-home.png');
+}
+
+.cardcontent {
+    width         : 100%;
+    padding-top   : 150px;
+    padding-bottom: 124px;
+
+    .home_title {
+        font-family   : Chewy;
+        font-size     : 60px;
+        font-style    : normal;
+        font-weight   : 400;
+        line-height   : 60px;
+        letter-spacing: 0em;
+        text-align    : center;
+        color         : #FDDA33;
+    }
+
+    .home_amount_title {
+        font-family   : Chewy;
+        font-size     : 30px;
+        font-style    : normal;
+        font-weight   : 400;
+        line-height   : 60px;
+        letter-spacing: 0em;
+        text-align    : center;
+        color         : #FDDA33;
+        margin-top    : 37px;
+    }
+
+    .home_amount {
+        display        : flex;
+        justify-content: center;
+
+        button:first-child {
+            // margin-top         : 12px;
+            width              : 50px;
+            height             : 50px;
+            background         : #F2024C;
+            border-radius      : 50%;
+            border             : 3px solid;
+            border-color       : rgba(231, 0, 0, 0.3);
+            background-image   : url('./../../assets/home/minus.png');
+            background-position: center;
+            background-repeat  : no-repeat;
+        }
+
+        button {
+            // margin-top         : 12px;
+            width              : 50px;
+            height             : 50px;
+            background         : #F2024C;
+            border-radius      : 50%;
+            border             : 3px solid;
+            border-color       : rgba(231, 0, 0, 0.3);
+            background-image   : url('./../../assets/home/plus.png');
+            background-position: center;
+            background-repeat  : no-repeat;
+        }
+
+        input {
+            background-color: transparent;
+            border          : none;
+            max-height      : 62px;
+            width           : 135px;
+            max-width       : 135px;
+            font-family     : Chewy;
+            font-size       : 75px;
+            font-style      : normal;
+            font-weight     : 400;
+            line-height     : 60px;
+            letter-spacing  : 0em;
+            text-align      : center;
+            color:white;
+        }
+
+        a {
+            font-family    : Montserrat;
+            font-size      : 24px;
+            font-style     : normal;
+            font-weight    : 500;
+            line-height    : 60px;
+            letter-spacing : 0em;
+            text-align     : left;
+            width          : 105px;
+            position       : absolute;
+            left           : 50%;
+            margin-left    : 144px;
+            text-decoration: underline;
+        }
+    }
+
+    .home_total {
+        font-family   : Montserrat;
+        font-size     : 24px;
+        font-style    : normal;
+        font-weight   : 700;
+        line-height   : 60px;
+        letter-spacing: 0em;
+        text-align    : center;
+        margin-top    : 5px;
+    }
+
+    .home_mint {
+        display        : flex;
+        justify-content: center;
+        margin-top     : 5px;
+
+        .mint_btn {
+            width         : 100px;
+            min-height    : 57px;
+            padding       : 0 30px;
+            font-family   : Chewy;
+            font-size     : 18px;
+            font-style    : normal;
+            font-weight   : 400;
+            line-height   : 24px;
+            letter-spacing: 0em;
+            text-align    : center;
+            border-radius : 10px;
+            background    : #977D00;
+            border        : none;
+        }
+    }
+
+    .home_available {
+        display        : flex;
+        justify-content: center;
+        margin-top     : 222px;
+
+        .available_container {
+            width           : 770px;
+            max-height      : 124px;
+            height          : 124px;
+            background-color: #FFF;
+            border-radius   : 10px;
+            border          : none;
+            position        : relative;
+
+            .available {
+                width      : max-content;
+                margin-left: 65px;
+
+                .available_first {
+                    margin-top    : 21px;
+                    font-family   : Chewy;
+                    font-size     : 26px;
+                    font-style    : normal;
+                    font-weight   : 400;
+                    line-height   : 34px;
+                    letter-spacing: 0em;
+                    text-align    : center;
+                    color         : #F2024C;
+                }
+
+                .available_second {
+                    font-family   : Chewy;
+                    font-size     : 30px;
+                    font-style    : normal;
+                    font-weight   : 400;
+                    line-height   : 40px;
+                    letter-spacing: 0em;
+                    text-align    : center;
+                    color         : #682020;
+                }
+            }
+
+            .available_img1 {
+                position: absolute;
+                top     : 20px;
+                left    : 470px;
+            }
+
+            .available_img2 {
+                position: absolute;
+                top     : -20px;
+                left    : 534px;
+            }
+
+            .available_img3 {
+                position: absolute;
+                top     : 20px;
+                left    : 637px;
+            }
+        }
+    }
+
+}

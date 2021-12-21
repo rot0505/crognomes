@@ -1,0 +1,53 @@
+header {
+    width   : 100%;
+    padding : 0px;
+    position: relative;
+    display : flow-root;
+
+    .logo {
+        position: absolute;
+        top     : 18px;
+        left    : 18px;
+    }
+
+    .header_menu {
+        display        : flex;
+        justify-content: center;
+        margin-top     : 62px;
+
+        a {
+            margin-right  : 58px;
+            font-family   : Montserrat;
+            font-size     : 20px;
+            font-style    : normal;
+            font-weight   : 800;
+            line-height   : 24px;
+            letter-spacing: 0em;
+            text-align    : left;
+            color         : #FDDA33;
+        }
+
+        a:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .header_btn {
+        position      : absolute;
+        top           : 44px;
+        right         : 75px;
+        width         : 185px;
+        min-height    : 54px;
+        padding       : 4px 0;
+        font-family   : Chewy;
+        font-size     : 18px;
+        font-style    : normal;
+        font-weight   : 400;
+        line-height   : 24px;
+        letter-spacing: 0em;
+        text-align    : center;
+        border-radius : 10px;
+        background    : #977D00;
+        border        : none;
+    }
+}
